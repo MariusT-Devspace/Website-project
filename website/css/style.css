@@ -1,0 +1,60 @@
+.container-padding{
+    padding: 20px;
+}
+
+.y-padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.x-padding{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.mt20{
+    margin-top: 20px;
+}
+.main-color{
+    background-color: #d6e3e4;
+    background-color: #b7c9ca33;
+}
+
+.winter-blue{
+    background-color: #7395AE;
+}
+
+section{
+    padding:.5rem;
+    min-height: 200px;
+}
+
+nav{
+    background-color: white;
+}
+.content-wrapper{
+    /*padding-top: 10px;*/
+}
+
+
+@media (min-width: 540px) {
+    section{
+        min-height: 260px;
+    }
+}
+
+@media (min-width: 576px) {
+    section{
+        min-height: 320px;
+    }
+}
+
+@media (min-width: 720px) {
+    section{
+        min-height: 350px;
+    }
+
+    .wrapper{
+        margin: 0px auto;
+    }
+}
