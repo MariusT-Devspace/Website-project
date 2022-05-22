@@ -17,32 +17,32 @@
 <meta property="og:description" content="A simple HTML5 Template for new projects.">
 <meta property="og:image" content="">
 
-<!-- Favicon -->
-<link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-
-<!--<link rel="apple-touch-icon" href=""> -->
-<link rel="stylesheet" href="css/styles.css?v=1.0">
-
 <!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
-
-<!-- Google Fonts Roboto -->
 <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
   rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
+  rel="stylesheet"
 />
 
- <!-- MDB -->
- <link rel="stylesheet" href="css/mdb.min.css" />
 
  <!-- My styles -->
 <link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="material-theme\dist\styledictionary\css\variables.css"/>
 </head>
 
 <body>
-<header class="container-fluid main-color x-padding y-padding winter-blue">
+<header class="container-fluid p-0 ">
 <!-- Navbar -->
-<nav class="navbar sticky-top navbar-expand-lg navbar-light ">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light primary-container-bg  pt-3 pb-3 justify-content-between">
     <!-- Container wrapper -->
     <div class="container-fluid w-100">
       <!-- Toggle button -->
@@ -57,7 +57,7 @@
       >
         <i class="fas fa-bars"></i>
       </button>
-    <a class="navbar-brand mt-0 me-auto mb-0 ms-2 h1" href="#">
+    <a class="navbar-brand mt-0  mb-0 ms-2 h1 fs-5" href="#">
         Construcciones y Reformas Adan
     </a>
       
@@ -88,22 +88,149 @@
   </nav>
   <!-- Navbar -->
 </header>
-<div class="content-wrapper main-color">
-<section class="container-fluid winter-blue container-padding">
-<h1>Section</h1>
+<div class="content-wrapper">
+<section>
+  <img src="img/casa.jpg" class="img-fluid" alt="Wild Landscape" />
 </section>
+<section class="container-fluid container-padding section-padding-top secondary-container-bg mb-4" id="section1">
+  <h2 class="text-center">Arreglamos y reparamos cualquier cosa de su casa</h2>
+  <p class="text-center fw-light fst-italic text-muted fs-5 mt-3">Presupuesto sin compromiso</p>
+  <div class="row justify-content-md-center mt-5">
+    <div class="col-6 col-sm-6 col-md-3">
+      <div class="list-group list-group-light container1 d-flex flex-column justify-content-start align-items-center">
+          <img class="icon_service" src="icons/fontaneria.png"/>
+          <span class="list-group-item bg-transparent">Fontanería</span>
+      </div>
+      <div class="list-group list-group-light container1 d-flex flex-column justify-content-start align-items-center">
+        <img class="icon_service mt-4" src="icons/goteras.png"/>
+        <span class="list-group-item bg-transparent">Goteras</span>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3">
+      <div class="list-group list-group-light container1 d-flex flex-column justify-content-start align-items-center">
+        <img class="icon_service" src="icons/desatascos.png"/>
+        <span class="list-group-item bg-transparent">Desatascos</span>
+      </div>
+      <div class="list-group list-group-light container1 d-flex flex-column justify-content-start align-items-center">
+        <img class="icon_service mt-4" src="icons/electricidad.png"/>
+        <span class="list-group-item bg-transparent">Electricidad</span>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3 mt-4">
+      <div class="list-group list-group-light container1 d-flex flex-column justify-content-start align-items-center">
+        <img class="icon_service" src="icons/albanileria.png"/>
+        <span class="list-group-item bg-transparent">Albañilería</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
 <section class="container-fluid container-padding">
-<h1>Section</h1>
+  <h5 class="text-center">Reforme su cocina con nosotros</h5>
+  <div class="row">
+    <div class="col-11 col-sm-8 mx-auto">
+      <h4></h4>
+  <div id="carousel" class="carousel slide d-block d-lg-none" data-mdb-ride="carousel">
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-mdb-target="#carousel"
+        data-mdb-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-mdb-target="#carousel"
+        data-mdb-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-mdb-target="#carousel"
+        data-mdb-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    
+    <div class="carousel-inner mt-3">
+        <div class="carousel-item active" data-mdb-interval="10000">
+          <img src="img/cocina_1.jpg" class="img-fluid d-block mx-auto" id="cocina1_carousel" alt="Wild Landscape" />
+        </div>
+        <div class="carousel-item" data-mdb-interval="2000">
+          <img src="img/cocina_2.jpg" class="img-fluid d-block mx-auto" id="cocina2_carousel" alt="Camera" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/cocina_3.jpg" class="img-fluid d-block mx-auto" id="cocina3_carousel" alt="Exotic Fruits" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" data-mdb-target="#carousel" type="button" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" data-mdb-target="#carousel" type="button" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+     </button>
+    </div>
+    </div>
+  </div>
+  
+      
+  <div class="row d-none d-lg-block">
+      <div class="col-lg-4">
+        <img src="img/cocina_1.jpg" class="card-img-bottom" alt="..." />
+      </div>
+      <div class="col-lg-4">
+        <img src="img/cocina_2.jpg" class="card-img-bottom" id="cocina2" alt="..." />
+      </div>
+      <div class="col-lg-4">
+        <img src="img/cocina_3.jpg" class="card-img-bottom" id="cocina3" alt="..." />
+      </div>
+  </div>    
 </section>
-<section class="container-fluid container-padding">
-<h1>Section</h1>
+
+<section class="mt-5 y-padding x-padding">
+  <p class="text-center">
+    <span class="fw-bold">Construcciones Reformas Adan</span> nace con la finalidad de ofrecer todos los servicios para la gestión integral de proyectos de construcción.
+  </p> <br>
+  <p class="text-center">
+    Nuestra labor como empresa es garantizar a nuestros clientes un <span class="fw-bold">servicio final de calidad</span>, personalizando cada trabajo partiendo de las necesidades y gustos de cada persona. La <span class="fw-bold">completa satisfacción de nuestros clientes</span> es nuestro objetivo y base de nuestro éxito.
+  </p> <br>
+  <p class="text-center">
+    Asesoramos a cada cliente con las diferentes posibilidades para su caso individual. Ejecutamos nuestro trabajo con la <span class="fw-bold">garantía y seguridad</span> que ofrece un <span class="fw-bold">equipo humano especializado y cualificado</span>.
+  </p>
+  
+
 </section>
+
+<section class="container-fluid container-padding section-padding-top secondary-container-bg " id="section2">
+
+
+<h1 class="text-center">Servicios</h1>
+  <ul class="list-unstyled text-center fs-4 mt-5">
+    <li class="list-group-item bg-transparent w-30 mx-auto ">Construcciones</li>
+    <li class="list-group-item bg-transparent w-30 mx-auto ">Pinturas</li>
+    <li class="list-group-item bg-transparent w-30 mx-auto ">Gres</li>
+    <li class="list-group-item bg-transparent w-30 mx-auto ">Pladur</li>
+    <li class="list-group-item bg-transparent w-30 mx-auto ">Piscinas</li>
+    <li class="list-group-item bg-transparent w-30 mx-auto ">Carpintería en general</li>
+    <li class="list-group-item bg-transparent w-30 mx-auto ">Albañilería</li>
+  </ul>    
+
+</section>
+
 </div>
 <footer class="container-fluid">
 <h1>Footer</footer>
 </footer>
 
- <!-- MDB -->
- <script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
+></script>
 </body>
 </html>
