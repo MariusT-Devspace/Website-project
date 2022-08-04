@@ -29,21 +29,21 @@
 />
 <!-- MDB -->
 <link
-  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css"
   rel="stylesheet"
 />
 
 
  <!-- My styles -->
 <!--<link rel="stylesheet" href="css/style.css"/>-->
-<link rel="stylesheet" href="sass/main.css"/>
+<link rel="stylesheet" href="styles/css/styles.css"/>
 <link rel="stylesheet" href="material-theme\dist\styledictionary\css\variables.css"/>
 </head>
 
 <body>
 <header class="container-fluid p-0 ">
 <!-- Navbar -->
-<nav class="navbar sticky-top navbar-expand-lg navbar-light primary-container-bg  pt-3 pb-3 justify-content-between">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light primary-container-bg  pt-3 pb-3 justify-content-between">
      <!-- Container wrapper -->
     <div class="container-fluid w-100">
       <!-- Toggle button -->
@@ -88,40 +88,48 @@
     <!-- Container wrapper -->
   </nav>
   <!-- Navbar -->
+
+  <div class="header-intro ">
+      <img src="img/casa.jpg" class="img-fluid" alt="Wild Landscape" />
+    <div class="header-intro-content mt-5 p-3">
+      <h3 class="text-center display-6">Arreglamos y reparamos cualquier cosa de su casa</h3>
+      <p class="text-center fw-light fst-italic small text-uppercase fs-6 mt-3">Presupuesto sin compromiso</p>
+    </div>
+  </div>  
+   
 </header>
-<div class="content-wrapper">
-<section id="header-section">
-  <img src="img/casa.jpg" class="img-fluid" alt="Wild Landscape" />
-</section>
-<section class="container-fluid container-padding section-padding-top secondary-container-bg mb-4" id="intro-section">
-  <h2 class="text-center">Arreglamos y reparamos cualquier cosa de su casa</h2>
-  <p class="text-center fw-light fst-italic text-muted fs-5 mt-3">Presupuesto sin compromiso</p>
-  <div class="row justify-content-md-center mt-5">
+<div class="content-wrapper p-2 d-flex flex-column align-items-center mt-5">
+
+<section class="container-fluid container-padding section-padding-top secondary-container-bg" id="intro-section">
+  
+  <div class="row justify-content-md-center">
     <div class="col-6 col-sm-6 col-md-3">
-      <div class="intro-icon d-flex flex-column justify-content-start align-items-center">
+      <div class="intro-icon">
           <img class="icon_service" src="icons/fontaneria.png"/>
           <span class="bg-transparent">Fontanería</span>
       </div>
-      <div class="intro-icon d-flex flex-column justify-content-start align-items-center">
+      <div class="intro-icon">
         <img class="icon_service img-fluid mt-4" src="icons/goteras.png"/>
         <span class="bg-transparent">Goteras</span>
       </div>
     </div>
     <div class="col-6 col-sm-6 col-md-3">
-      <div class="intro-icon d-flex flex-column justify-content-start align-items-center">
+      <div class="intro-icon">
         <img class="icon_service  img-fluid" src="icons/desatascos.png"/>
         <span class="bg-transparent">Desatascos</span>
       </div>
-      <div class="intro-icon d-flex flex-column justify-content-start align-items-center">
+      <div class="intro-icon">
         <img class="icon_service img-fluid mt-4" src="icons/electricidad.png"/>
         <span class="bg-transparent">Electricidad</span>
       </div>
     </div>
-    <div class="col-12 col-sm-6 col-md-3 mt-4">
-      <div class="intro-icon d-flex flex-column justify-content-start align-items-center">
+    <div class="col-6 col-sm-6 col-md-3">
+      <div class="intro-icon">
         <img class="icon_service img-fluid" src="icons/albanileria.png"/>
         <span class="bg-transparent">Albañilería</span>
       </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3">
     </div>
   </div>
 
@@ -193,7 +201,7 @@
   </div>    
 </section>
 
-<section class="mt-5 y-padding x-padding">
+<section class="container-fluid container-padding">
   <p class="text-center">
     <span class="fw-bold">Construcciones Reformas Adan</span> nace con la finalidad de ofrecer todos los servicios para la gestión integral de proyectos de construcción.
   </p> <br>
@@ -207,18 +215,18 @@
 
 </section>
 
-<section class="container-fluid container-padding section-padding-top secondary-container-bg " id="servicios-section">
+<section class="container-fluid container-padding section-padding-top secondary-container-bg" id="servicios-section">
 
 
-<h1 class="text-center">Servicios</h1>
-  <ul class="list-unstyled text-center fs-4 mt-5">
-    <li class="list-group-item bg-transparent w-30 mx-auto ">Construcciones</li>
-    <li class="list-group-item bg-transparent w-30 mx-auto ">Pinturas</li>
-    <li class="list-group-item bg-transparent w-30 mx-auto ">Gres</li>
-    <li class="list-group-item bg-transparent w-30 mx-auto ">Pladur</li>
-    <li class="list-group-item bg-transparent w-30 mx-auto ">Piscinas</li>
-    <li class="list-group-item bg-transparent w-30 mx-auto ">Carpintería en general</li>
-    <li class="list-group-item bg-transparent w-30 mx-auto ">Albañilería</li>
+<h1 class="text-center mt-5">Servicios</h1>
+  <ul class="list-group list-group-light text-center fs-4 mt-5">
+    <li class="list-group-item bg-transparent border-0 w-30 mx-auto ">Construcciones</li>
+    <li class="list-group-item bg-transparent border-0 w-30 mx-auto ">Pinturas</li>
+    <li class="list-group-item bg-transparent border-0 w-30 mx-auto ">Gres</li>
+    <li class="list-group-item bg-transparent border-0 w-30 mx-auto ">Pladur</li>
+    <li class="list-group-item bg-transparent border-0 w-30 mx-auto ">Piscinas</li>
+    <li class="list-group-item bg-transparent border-0 w-30 mx-auto ">Carpintería en general</li>
+    <li class="list-group-item bg-transparent border-0 w-30 mx-auto ">Albañilería</li>
   </ul>    
 
 </section>
