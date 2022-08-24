@@ -27,5 +27,8 @@
 #about-section {
   max-width: 800px;
 }
+#about-section p {
+  font-size: 1.15rem;
+}
 
 /*# sourceMappingURL=styles.css.map */
