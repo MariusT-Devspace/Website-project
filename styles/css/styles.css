@@ -11,7 +11,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 40px;
 }
 
 .intro-icon {
@@ -23,6 +22,10 @@
 }
 .intro-icon img {
   width: 40px;
+}
+
+#about-section {
+  max-width: 800px;
 }
 
 /*# sourceMappingURL=styles.css.map */
