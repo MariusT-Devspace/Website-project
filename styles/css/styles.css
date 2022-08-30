@@ -33,6 +33,7 @@
 
 #work-section .card {
   width: 20rem;
+  min-height: 500px;
 }
 
 /*# sourceMappingURL=styles.css.map */
