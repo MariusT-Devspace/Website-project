@@ -4,6 +4,11 @@
   gap: 90px;
 }
 
+@media only screen and (min-width: 992px) {
+  .content-wrapper {
+    max-width: 1200px;
+  }
+}
 #intro-section {
   max-width: 600px;
 }
@@ -32,7 +37,7 @@
 }
 
 #work-section .card {
-  width: 20rem;
+  max-width: 20rem;
   min-height: 500px;
 }
 
