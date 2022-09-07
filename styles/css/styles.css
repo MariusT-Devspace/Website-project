@@ -41,4 +41,21 @@
   min-height: 500px;
 }
 
+.trust-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+.trust-icon .trust-icon-header {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 10px;
+}
+.trust-icon img {
+  width: 50px;
+}
+
 /*# sourceMappingURL=styles.css.map */
