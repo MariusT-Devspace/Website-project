@@ -41,23 +41,24 @@
   min-height: 500px;
 }
 
-.trust-icon {
+.trust-item {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 8px;
+  gap: 24px;
   margin-bottom: 30px;
+  padding: 10px;
 }
-.trust-icon .trust-icon-header {
+.trust-item .trust-item-header {
   display: flex;
   flex-direction: row;
   align-items: end;
   gap: 17px;
 }
-.trust-icon img {
+.trust-item img {
   width: 50px;
 }
-.trust-icon span.lead {
+.trust-item span.lead {
   font-size: 1.15rem;
 }
 
