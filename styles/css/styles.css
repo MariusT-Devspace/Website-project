@@ -62,4 +62,9 @@
   font-size: 1.15rem;
 }
 
+#pricing-card {
+  padding: 0.5rem 1.5rem;
+  max-width: 35rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

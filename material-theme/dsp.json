@@ -30,14 +30,14 @@
       },
       {
         "label": "CSS",
-        "export_tokens": true,
+        "export_tokens": false,
         "snippet_id": "css",
         "syntax": "text/css",
         "ext-com_adobe_xd-styledictionary_id": "css"
       },
       {
         "label": "Flutter (Dart)",
-        "export_tokens": true,
+        "export_tokens": false,
         "snippet_id": "dart",
         "syntax": "application/vnd.dart",
         "ext-com_adobe_xd-styledictionary_id": "flutter"
@@ -74,14 +74,14 @@
       },
       {
         "label": "Android (Java)",
-        "export_tokens": true,
+        "export_tokens": false,
         "snippet_id": "java",
         "syntax": "text/x-java",
         "ext-com_adobe_xd-styledictionary_id": "android"
       },
       {
         "label": "JavaScript",
-        "export_tokens": true,
+        "export_tokens": false,
         "snippet_id": "javascript",
         "syntax": "text/javascript",
         "ext-com_adobe_xd-styledictionary_id": "js"
@@ -168,7 +168,7 @@
       },
       {
         "label": "iOS (Swift)",
-        "export_tokens": true,
+        "export_tokens": false,
         "snippet_id": "swift",
         "syntax": "text/x-swift",
         "ext-com_adobe_xd-styledictionary_id": "ios-swift"

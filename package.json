@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "sass": "^1.54.5"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.7.1"
   }
 }

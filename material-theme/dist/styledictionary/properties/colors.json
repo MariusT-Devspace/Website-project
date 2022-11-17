@@ -76,7 +76,7 @@
       "value": "{color.md_sys_color_inverse-surface_light.value}"
     },
     "md_sys_color_primary_light": {
-      "value": "#00629f"
+      "value": "#00629fff"
     },
     "md_sys_color_on-primary_light": {
       "value": "#ffffff"
