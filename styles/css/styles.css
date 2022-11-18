@@ -64,7 +64,18 @@
 
 #pricing-card {
   padding: 0.5rem 1.5rem;
-  max-width: 35rem;
+  max-width: 55rem;
+  background-color: #d0e4ff;
+}
+
+nav {
+  background-color: #0062a0;
+}
+nav a {
+  color: #ffffff !important;
+}
+nav .navbar-toggler {
+  color: #ffffff !important;
 }
 
 #visita ul li {
