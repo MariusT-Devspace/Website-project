@@ -72,10 +72,13 @@
 #pricing-card .card-text {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 #pricing-card .card-text span {
-  width: 370px;
+  background-color: #6a5779;
+  padding: 0.5rem;
+  color: #ffffff;
 }
 
 nav {
