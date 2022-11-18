@@ -2,6 +2,7 @@
   max-width: 960px;
   margin: auto;
   gap: 90px;
+  background-color: #fdfcff;
 }
 
 @media only screen and (min-width: 992px) {
@@ -64,8 +65,17 @@
 
 #pricing-card {
   padding: 0.5rem 1.5rem;
-  max-width: 55rem;
+  max-width: 40rem;
   background-color: #d0e4ff;
+  color: #001d35;
+}
+#pricing-card .card-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#pricing-card .card-text span {
+  width: 370px;
 }
 
 nav {
@@ -80,6 +90,7 @@ nav .navbar-toggler {
 
 #visita ul li {
   font-size: 1.14rem;
+  color: #f1f0f4;
 }
 
 /*# sourceMappingURL=styles.css.map */
