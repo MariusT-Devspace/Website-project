@@ -65,11 +65,17 @@
 #pricing-card {
   padding: 0.5rem 1.5rem;
   max-width: 55rem;
-  background-color: #cee5ff;
+  background-color: #d0e4ff;
 }
 
 nav {
-  background-color: #00629f;
+  background-color: #0062a0;
+}
+nav a {
+  color: #ffffff !important;
+}
+nav .navbar-toggler {
+  color: #ffffff !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
