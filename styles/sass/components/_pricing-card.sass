@@ -1,17 +1,21 @@
 @use "../utils/_colors"
 
 #pricing-card
-    padding: 0.5rem 1.5rem
     max-width: 40rem
     background-color: colors.$md-sys-color-primary-container
-    color: colors.$md-sys-color-on-primary-container
+    .card-header
+        color: colors.$md-sys-color-on-primary-container
+    h5
+        color: colors.$md-sys-color-on-primary-container
+    .card-body
+        padding: 1.2rem 1.5rem
+        .card-text
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            gap: 1rem
+            span
+                background-color: colors.$md-sys-color-tertiary
+                padding: 0.5rem
+                color: colors.$md-sys-color-on-tertiary
     
-    .card-text
-        display: flex
-        flex-direction: row
-        flex-wrap: wrap
-        gap: 1rem
-        span
-            background-color: colors.$md-sys-color-tertiary
-            padding: 0.5rem
-            color: colors.$md-sys-color-on-tertiary

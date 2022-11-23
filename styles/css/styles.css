@@ -48,7 +48,8 @@
   align-items: start;
   gap: 24px;
   margin-bottom: 30px;
-  padding: 10px;
+  padding: 1.2rem;
+  background-color: #d0e4ff;
 }
 .trust-item .trust-item-header {
   display: flex;
@@ -64,18 +65,25 @@
 }
 
 #pricing-card {
-  padding: 0.5rem 1.5rem;
   max-width: 40rem;
   background-color: #d0e4ff;
+}
+#pricing-card .card-header {
   color: #001d35;
 }
-#pricing-card .card-text {
+#pricing-card h5 {
+  color: #001d35;
+}
+#pricing-card .card-body {
+  padding: 1.2rem 1.5rem;
+}
+#pricing-card .card-body .card-text {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
 }
-#pricing-card .card-text span {
+#pricing-card .card-body .card-text span {
   background-color: #6a5779;
   padding: 0.5rem;
   color: #ffffff;

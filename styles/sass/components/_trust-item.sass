@@ -1,10 +1,13 @@
 @use "../utils/_mixins.sass" 
+@use "../utils/_colors"
 
 .trust-item
     @include mixins.flex-column-alignstart
     gap: 24px
     margin-bottom: 30px
-    padding: 10px
+    padding: 1.2rem
+    background-color: colors.$md-sys-color-primary-container
+
     .trust-item-header
         @include mixins.flex-row-alignend
         gap: 17px
