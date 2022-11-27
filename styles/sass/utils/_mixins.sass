@@ -1,3 +1,5 @@
+@use "../utils/_colors"
+
 @mixin flex-column-aligncenter
     display: flex
     flex-direction: column
@@ -12,3 +14,7 @@
     display: flex
     flex-direction: row
     align-items: end
+
+@mixin footer-text-style
+    font-size: 1.14rem
+    color: colors.$md-sys-color-inverse-on-surface

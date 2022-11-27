@@ -1,0 +1,23 @@
+@use "../utils/_colors"
+@use "../utils/_mixins" 
+
+.contact-info-item
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    i
+        color: colors.$md-sys-color-tertiary
+    span
+        @include mixins.footer-text-style
+        width: 180px
+
+
+@media only screen and (min-width: 768px)
+    
+
+@media only screen and (min-width: 992px)
+    .contact-info-item
+        flex-direction: row
+        gap: 25px
+
