@@ -1,8 +1,74 @@
-//@use "../utils/_colors"
+@use "../utils/_colors"
 
 #map
     iframe
         max-width: 320px
+
+.social-buttons
+    h5
+        color: colors.$md-sys-color-inverse-on-surface !important
+
+
+footer
+    #contact-form
+        input:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus,
+        select:-webkit-autofill,
+        select:-webkit-autofill:hover,
+        select:-webkit-autofill:focus
+            -webkit-text-fill-color: colors.$md-sys-color-inverse-on-surface
+            -webkit-box-shadow: 0 0 0px 0px colors.$md-sys-color-inverse-on-surface inset
+            -webkit-transition: none
+            transition: none !important
+            background-color: #332D2D !important
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover
+            opacity: 0 !important
+            background-color: #332D2D !important
+            transition: none !important
+           
+        .form-outline
+            .form-control
+                color: colors.$md-sys-color-inverse-on-surface !important
+
+            .form-control:focus~
+                .form-notch
+                    .form-notch-leading
+                        border-top: .165rem solid colors.$md-sys-color-tertiary !important
+                        border-bottom: .165rem solid colors.$md-sys-color-tertiary !important
+                        border-left: .165rem solid colors.$md-sys-color-tertiary !important
+                        box-shadow: none !important
+        .form-outline
+            .form-control:focus~
+                .form-notch
+                    .form-notch-trailing
+                        border-top: .165rem solid colors.$md-sys-color-tertiary !important
+                        border-right: .165rem solid colors.$md-sys-color-tertiary !important
+                        border-bottom: .165rem solid colors.$md-sys-color-tertiary !important
+                        box-shadow: none!important
+        .form-outline
+            .form-control:focus~
+                .form-notch
+                    .form-notch-middle
+                        border-top: 0
+                        border-bottom: .165rem solid colors.$md-sys-color-tertiary !important
+                        box-shadow: none !important
+        .form-outline
+            .form-control~
+                .form-notch
+                    .form-notch-leading
+                        border-radius: 10px 0 0 10px
+        .form-outline
+            .form-control~
+                .form-notch
+                    .form-notch-trailing
+                        border-radius: 0 10px 10px 0              
+        label
+            color: colors.$md-sys-color-inverse-on-surface !important
+
 
 @media only screen and (min-width: 992px)
     #contact-info
