@@ -1,5 +1,12 @@
 @use "../utils/_colors"
 
+.footer-wrapper
+    margin: auto
+    max-width: 700px
+    .credits
+        max-width: 300px
+        margin: auto
+
 #map
     iframe
         max-width: 320px
@@ -12,5 +19,8 @@
     margin: auto
 
 @media only screen and (min-width: 992px)
+    .footer-wrapper
+        max-width: 1100px
+
     #contact-info
         margin-left: 30px
