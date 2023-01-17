@@ -101,6 +101,9 @@ nav .navbar-toggler {
 }
 
 .footer-wrapper {
+  display: flex;
+  direction: column;
+  justify-content: center;
   margin: auto;
   max-width: 700px;
 }
@@ -113,12 +116,14 @@ nav .navbar-toggler {
   max-width: 320px;
 }
 
+.social-buttons {
+  display: inline-flex;
+  width: min-content;
+  direction: row;
+  margin-bottom: 40px;
+}
 .social-buttons h5 {
   color: #f1f0f4 !important;
-}
-
-#contact {
-  margin: auto;
 }
 
 @media only screen and (min-width: 992px) {

@@ -1,6 +1,9 @@
 @use "../utils/_colors"
 
 .footer-wrapper
+    display: flex
+    direction: column
+    justify-content: center
     margin: auto
     max-width: 700px
     .credits
@@ -12,11 +15,12 @@
         max-width: 320px
 
 .social-buttons
+    display: inline-flex
+    width: min-content
+    direction: row
+    margin-bottom: 40px
     h5
         color: colors.$md-sys-color-inverse-on-surface !important
-
-#contact
-    margin: auto
 
 @media only screen and (min-width: 992px)
     .footer-wrapper
