@@ -1,22 +1,26 @@
 @use "../utils/_colors"
 
-#pricing-card
-    max-width: 40rem
+#promotions-card
+    max-width: 90vw
     background-color: colors.$md-sys-color-primary-container
+    padding: 1% 5% 5% 5%
     .header
         margin-left: 1.5rem
-    h5
+        margin-bottom: 40px !important
+    h2
         color: colors.$md-sys-color-on-primary-container
+        text-align: left !important
+    h4
+        color: colors.$md-sys-color-on-surface-light !important
     .card-body
-        padding: 1.2rem 1.5rem
         .card-text
             display: flex
             flex-direction: row
             flex-wrap: wrap
             gap: 1rem
-            margin-left: 0.6rem
             span
                 background-color: colors.$md-sys-color-tertiary
                 padding: 0.5rem
                 color: colors.$md-sys-color-on-tertiary
+                font-size: 0.8rem
     
