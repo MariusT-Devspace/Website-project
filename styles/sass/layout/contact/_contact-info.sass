@@ -4,20 +4,21 @@
     width: 100%
     #contact-info-container
         max-width: 1300px
-        height: 500px
+        min-height: 500px
         background-color: colors.$md-ref-palette-neutral-variant-95 !important
         margin: 0px
-        #contact-info-content-desktop
+        #contact-info-desktop
             display: flex
             flex-direction: column
             justify-content: center
-            padding: 60px
-            .contact-phone-email
+            padding: 90px
+            .contact-info-content
                 display: flex
                 flex-direction: column
+                justify-content: center
                 align-content: stretch
-                gap: 40px
-            .social-buttons
+                gap: 60px
+            /* .social-buttons
                 display: flex
                 flex-direction: column
                 align-items: center
@@ -27,7 +28,7 @@
                 .social-buttons-container
                     display: flex
                     flex-direction: row
-                    gap: 40px
+                    gap: 40px */
             #contact-location-desktop
                 #location-desktop-content
                     display: flex
@@ -41,3 +42,14 @@
                                 margin-top: -5px
 
 
+.social-buttons
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .social-buttons-container
+        display: flex
+        flex-direction: column
+        gap: 20px
+        padding-top: 5px
+        
