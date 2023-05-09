@@ -1,0 +1,33 @@
+@use "../../utils/_colors"
+
+.contact-info-item
+    display: flex
+    flex-direction: column
+    gap: 10px
+    i
+        color: colors.$md-sys-color-tertiary
+    .contact-details-container
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        margin-top: -10px
+        .contact-details
+            margin-top: -5px
+    .contact-info-email    
+        width: 180px
+        text-align: center
+        word-wrap: break-word !important
+
+#location-desktop-icon
+    color: colors.$md-sys-color-tertiary !important
+
+
+@media only screen and (min-width: 768px)
+    #contact-info-email
+        text-align: left !important
+
+@media only screen and (min-width: 992px)
+    .contact-info-item
+        flex-direction: row
+        gap: 25px
+

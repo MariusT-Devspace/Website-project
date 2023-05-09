@@ -1,0 +1,30 @@
+@use "../../utils/_colors"
+
+#map
+    display: flex
+    flex-direction: column
+    align-items: flex-end 
+    margin-top: 20px
+    padding: 0px
+    iframe
+        margin-left: 0px
+
+@media only screen and (min-width: 397px)
+    #map
+        iframe
+            width: 370px
+            height: 270px
+
+@media only screen and (min-width: 544px)
+    #map
+        iframe
+            width: 500px
+            height: 300px
+
+@media only screen and (min-width: 768px)
+    #map
+        margin-top: 0px
+        iframe
+            width: 100% !important
+            height:500px !important
+
