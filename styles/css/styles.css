@@ -30,9 +30,17 @@ body {
 }
 
 .content-wrapper {
+  width: 100%;
+  gap: 90px;
+}
+
+section {
+  width: 100%;
+}
+
+.section-wrapper {
   max-width: 960px;
   margin: auto;
-  gap: 90px;
 }
 
 h2 {
@@ -41,7 +49,7 @@ h2 {
 }
 
 @media only screen and (min-width: 992px) {
-  .content-wrapper {
+  .section-wrapper {
     max-width: 1200px;
   }
 }
@@ -92,6 +100,13 @@ h2 {
 }
 #about-section .about-content p {
   font-size: 1.15rem;
+}
+
+#servicios-section {
+  width: 100%;
+  background-color: #eff0fa !important;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .header-intro-contact {
@@ -272,9 +287,12 @@ nav .navbar-toggler {
 }
 
 #promotions-card {
-  max-width: 90vw;
+  width: 90vw;
+  max-width: 700px;
   background-color: #d8e2ff;
   padding: 1% 5% 5% 5%;
+  margin-left: auto;
+  margin-right: auto;
 }
 #promotions-card .header {
   margin-left: 1.5rem;
