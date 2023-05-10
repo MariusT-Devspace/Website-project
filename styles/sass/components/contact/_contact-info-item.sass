@@ -3,28 +3,62 @@
 .contact-info-item
     display: flex
     flex-direction: column
+    align-items: center
     gap: 10px
     i
         color: colors.$md-sys-color-tertiary
     .contact-details-container
         display: flex
         flex-direction: column
-        align-items: flex-start
-        margin-top: -10px
+        align-items: center
         .contact-details
             margin-top: -5px
+            text-align: center !important
     .contact-info-email    
         width: 180px
-        text-align: center
         word-wrap: break-word !important
 
-#location-desktop-icon
-    color: colors.$md-sys-color-tertiary !important
+#contact-location-desktop
+    display: flex
+    flex-direction: column
+    align-items: center !important
+    #location-desktop-icon
+        color: colors.$md-sys-color-tertiary !important
 
 
 @media only screen and (min-width: 768px)
     #contact-info-email
         text-align: left !important
+
+    .contact-info-item
+        display: flex
+        flex-direction: column
+        gap: 10px
+        align-items: flex-start
+        i
+            color: colors.$md-sys-color-tertiary
+        .contact-details-container
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            margin-top: -10px
+            .contact-details
+                margin-top: -5px
+                text-align: left !important
+        .contact-info-email    
+            width: 180px
+            word-wrap: break-word !important
+
+    #contact-location-desktop
+        display: flex
+        flex-direction: row
+        justify-content: start
+        gap: 25px
+        //margin-top: -10px
+        #location-desktop-details
+            div
+                &:first-of-type
+                    margin-top: -5px
 
 @media only screen and (min-width: 992px)
     .contact-info-item
