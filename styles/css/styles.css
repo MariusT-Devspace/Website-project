@@ -420,6 +420,7 @@ nav .navbar-toggler {
   }
 }
 #contact-form {
+  max-width: 800px;
   padding: 0px 2% !important;
 }
 #contact-form input:-webkit-autofill,
