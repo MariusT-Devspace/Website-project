@@ -32,8 +32,8 @@
 
     .contact-info-item
         display: flex
-        flex-direction: column
-        gap: 10px
+        flex-direction: row
+        gap: 25px
         align-items: flex-start
         i
             color: colors.$md-sys-color-tertiary
@@ -59,9 +59,3 @@
             div
                 &:first-of-type
                     margin-top: -5px
-
-@media only screen and (min-width: 992px)
-    .contact-info-item
-        flex-direction: row
-        gap: 25px
-

@@ -127,9 +127,9 @@
     </div>
 
 
-    <div class="col-12 col-lg-8 d-md-block" id="contact-info-desktop">
+    <div class="col-12 col-md-6 col-xl-8 d-md-flex" id="contact-info-desktop">
       <div class="row"> 
-        <div class="col-12 col-lg-6 contact-info-content">
+        <div class="col-12 col-xl-6 contact-info-content">
           <div class="contact-info-item">
             <i class="fas fa-phone-alt fa-2x contact-icon"></i>
             <div class="contact-details-container">
@@ -162,9 +162,9 @@
         </div>
         
         
-        <div class="col-12 col-lg-6 social-buttons">
-          <div class="text-center mb-3">
-            <h6 class="text-start mb-4">También estamos en:</h6>
+        <div class="col-12 col-lg-6 d-md-none d-xl-flex social-buttons">
+          <div class="mb-3">
+            <h6 class="mb-4">También estamos en:</h6>
             <div class="social-buttons-container">
               <div class="social-button">
                 <a class="btn btn-floating btn-md mx-1 social-button" 
@@ -196,17 +196,52 @@
       
     </div>
   </div>
-  <div class="col-12 col-lg-4" id="map">
+  <div class="col-12 col-md-6 col-xl-4" id="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.7427584069987!2d-0.04324908397409344!3d39.991853679416735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5ffe320c0e1d67%3A0xb0cb7d691f68d2bb!2sC.%20Historiador%20Escolano%2C%201%2C%2012004%20Castell%C3%B3n%20de%20la%20Plana%2C%20Castell%C3%B3n!5e0!3m2!1ses!2ses!4v1668709586663!5m2!1ses!2ses" width="300" height="230" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
-  </div></section>
+  
+  </div>
+
+  <div class="col-12 d-none d-md-flex d-xl-none social-buttons">
+    <div class="text-center mb-3">
+      <h6 class="text-start mb-4">También estamos en:</h6>
+      <div class="social-buttons-container">
+        <div class="social-button">
+          <a class="btn btn-floating btn-md mx-1 social-button" 
+          href="https://www.facebook.com/profile.php?id=100068502917174">
+            <i class="fab fa-lg fa-facebook-f"></i>
+          </a>
+          <span class="d-none d-md-block">Facebook</span>
+        </div>
+        
+        <div class="social-button mt-1">
+        <a class="btn btn-floating btn-md mx-1" 
+        href="https://www.instagram.com/construcciones_reformas_adan/">
+          <i class="fab fa-lg fa-instagram"></i>
+        </a>
+        <span class="d-none d-md-block">Instagram</span>
+        </div>
+
+        <div class="social-button mt-1">
+          <a class="btn btn-floating btn-md mx-1" 
+          href="https://wa.me/964100059">
+            <i class="fab fa-lg fa-whatsapp"></i>
+          </a>
+          <span class="d-none d-md-block">Whatsapp</span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+</section>
 
 <section id="contact-form-section">
   <div class="row" id="contact-form">
-    <h4 class="mt-xxl-4 mt-5 mb-0">Escríbenos</h4>
+    <h4 class="mb-0">Escríbenos</h4>
     <div class="col-12 mx-auto">
       <form class="mt-4" action="/php/send-email.php" method="post">
         <!-- 2 column grid layout with text inputs for the first and last names -->
