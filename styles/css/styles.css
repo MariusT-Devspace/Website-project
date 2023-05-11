@@ -258,7 +258,7 @@ nav .navbar-toggler {
 }
 #work-section .card .card-body {
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
 }
 
 .trust-item {
@@ -313,9 +313,9 @@ nav .navbar-toggler {
   background-position: center !important;
   background-size: cover !important;
   border-radius: 0.5rem 0 0 0.5rem;
-  box-shadow: inset -2px -3px 11px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: inset -2px -3px 11px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: inset -2px -3px 11px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -4px 0px 11px 0px rgba(0, 0, 0, 0.75) !important;
+  -webkit-box-shadow: inset -4px 0px 11px 0px rgba(0, 0, 0, 0.75) !important;
+  -moz-box-shadow: inset -4px 0px 11px 0px rgba(0, 0, 0, 0.75) !important;
 }
 #promotions-section #promotions-container .card .row .card-body {
   height: 100%;
