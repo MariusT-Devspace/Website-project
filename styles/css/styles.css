@@ -146,13 +146,13 @@ h2 {
   padding-top: 20px;
   padding-bottom: 40px;
 }
-#contact-info-section #contact-info-container #contact-info-desktop {
+#contact-info-section #contact-info-container #contact-info-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 30px;
 }
-#contact-info-section #contact-info-container #contact-info-desktop .contact-info-content {
+#contact-info-section #contact-info-container #contact-info-card .contact-info-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,10 +187,10 @@ h2 {
     height: 500px;
     padding: 0px;
   }
-  #contact-info-section #contact-info-container #contact-info-desktop {
+  #contact-info-section #contact-info-container #contact-info-card {
     padding: 40px;
   }
-  #contact-info-section #contact-info-container #contact-info-desktop .contact-info-content {
+  #contact-info-section #contact-info-container #contact-info-card .contact-info-content {
     align-items: flex-start;
     gap: 60px;
   }
