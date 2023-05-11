@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .footer-wrapper {
   display: flex;
   direction: column;
@@ -40,7 +41,8 @@ section {
 
 .section-wrapper {
   max-width: 960px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
@@ -286,32 +288,51 @@ nav .navbar-toggler {
   padding: 5px !important;
 }
 
-#promotions-card {
-  width: 90vw;
-  max-width: 700px;
+#promotions-section #promotions-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+}
+#promotions-section #promotions-container #cocina-card .row .card-image {
+  background-image: url(../../../../img/cocina-promo.jpg);
+}
+#promotions-section #promotions-container #baño-card .row .card-image {
+  background-image: url(../../../../img/baño-promo.jpg);
+}
+#promotions-section #promotions-container .card {
   background-color: #d8e2ff;
-  padding: 1% 5% 5% 5%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 600px;
+  height: 190px;
 }
-#promotions-card .header {
-  margin-left: 1.5rem;
-  margin-bottom: 40px !important;
+#promotions-section #promotions-container .card .row .card-image {
+  height: 190px;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  border-radius: 0.5rem 0 0 0.5rem;
+  box-shadow: inset -2px -3px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: inset -2px -3px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -2px -3px 11px 0px rgba(0, 0, 0, 0.75);
 }
-#promotions-card h2 {
-  color: #001a41;
-  text-align: left !important;
+#promotions-section #promotions-container .card .row .card-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px !important;
 }
-#promotions-card h4 {
-  color: #1b1b1f !important;
-}
-#promotions-card .card-body .card-text {
+#promotions-section #promotions-container .card .row .card-body .card-text {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 1rem;
+  row-gap: 5px;
+  column-gap: 10px;
+  margin-bottom: 0px !important;
 }
-#promotions-card .card-body .card-text span {
+#promotions-section #promotions-container .card .row .card-body .card-text span {
   background-color: #715574;
   padding: 0.5rem;
   color: #ffffff;

@@ -1,29 +1,52 @@
 @use "../../utils/_colors"
 
-#promotions-card
-    width: 90vw
-    max-width: 700px
-    background-color: colors.$md-sys-color-primary-container
-    padding: 1% 5% 5% 5%
-    margin-left: auto
-    margin-right: auto
-    .header
-        margin-left: 1.5rem
-        margin-bottom: 40px !important
-    h2
-        color: colors.$md-sys-color-on-primary-container
-        text-align: left !important
-    h4
-        color: colors.$md-sys-color-on-surface-light !important
-    .card-body
-        .card-text
-            display: flex
-            flex-direction: row
-            flex-wrap: wrap
-            gap: 1rem
-            span
-                background-color: colors.$md-sys-color-tertiary
-                padding: 0.5rem
-                color: colors.$md-sys-color-on-tertiary
-                font-size: 0.8rem
-    
+#promotions-section
+    #promotions-container
+        display: flex
+        flex-direction: row
+        justify-content: center
+        column-gap: 30px
+        row-gap: 10px
+        flex-wrap: wrap
+        #cocina-card
+            .row    
+                .card-image
+                    background-image: url(../../../../img/cocina-promo.jpg)
+
+        #baño-card
+            .row    
+                .card-image
+                    background-image: url(../../../../img/baño-promo.jpg)
+
+        .card
+            background-color: colors.$md-sys-color-primary-container
+            width: 600px
+            height: 190px
+            .row    
+                .card-image
+                    height: 190px
+                    background-repeat: no-repeat !important
+                    background-position: center !important
+                    background-size: cover !important
+                    border-radius: .5rem 0 0 .5rem
+                    box-shadow: inset -2px -3px 11px 0px rgba(0, 0, 0, 0.75)
+                    -webkit-box-shadow: inset -2px -3px 11px 0px rgba(0, 0, 0, 0.75)
+                    -moz-box-shadow: inset -2px -3px 11px 0px rgba(0, 0, 0, 0.75)
+                .card-body
+                    height: 100%
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    padding: 20px !important
+                    .card-text
+                        display: flex
+                        flex-direction: row
+                        flex-wrap: wrap
+                        row-gap: 5px
+                        column-gap: 10px
+                        margin-bottom: 0px !important
+                        span
+                            background-color: colors.$md-sys-color-tertiary
+                            padding: 0.5rem
+                            color: colors.$md-sys-color-on-tertiary
+                            font-size: 0.8rem
