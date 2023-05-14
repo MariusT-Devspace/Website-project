@@ -449,10 +449,7 @@ nav .navbar-toggler {
 #contact-form input:-webkit-autofill:focus,
 #contact-form textarea:-webkit-autofill,
 #contact-form textarea:-webkit-autofill:hover,
-#contact-form textarea:-webkit-autofill:focus,
-#contact-form select:-webkit-autofill,
-#contact-form select:-webkit-autofill:hover,
-#contact-form select:-webkit-autofill:focus {
+#contact-form textarea:-webkit-autofill:focus {
   background-color: #332D2D !important;
   -webkit-box-shadow: 0 0 0px 1000px #fefbff inset;
   transition: background-color 5000s ease-in-out 0s;
@@ -482,6 +479,13 @@ nav .navbar-toggler {
 }
 #contact-form label {
   color: #4f4f4f !important;
+}
+#contact-form input:-webkit-autofill:not(:focus) + label {
+  transform: translateY(-1rem) translateY(0.1rem) scale(0.8);
+}
+#contact-form input:-webkit-autofill:not(:focus) ~ .form-notch .form-notch-middle {
+  border-top: 0;
+  box-shadow: none !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

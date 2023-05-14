@@ -10,10 +10,7 @@
     input:-webkit-autofill:focus,
     textarea:-webkit-autofill,
     textarea:-webkit-autofill:hover,
-    textarea:-webkit-autofill:focus,
-    select:-webkit-autofill,
-    select:-webkit-autofill:hover,
-    select:-webkit-autofill:focus
+    textarea:-webkit-autofill:focus
         //-webkit-text-fill-color: colors.$md-sys-color-inverse-on-surface !important
         // -webkit-box-shadow: 0 0 0px 0px colors.$md-sys-color-inverse-on-surface inset !important
         // -webkit-transition: none  !important
@@ -57,3 +54,9 @@
                     border-radius: 0 10px 10px 0              
     label
         color: #4f4f4f !important
+    input:-webkit-autofill:not(:focus) + label
+        transform: translateY(-1rem) translateY(0.1rem) scale(0.8)
+    input:-webkit-autofill:not(:focus) ~ .form-notch
+        .form-notch-middle 
+            border-top: 0
+            box-shadow: none !important
