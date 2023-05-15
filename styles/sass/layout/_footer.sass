@@ -1,14 +1,64 @@
 @use "../utils/_colors"
 
-.footer-wrapper
-    display: flex
-    direction: column
-    justify-content: center
-    margin: auto
-    max-width: 700px
-    .credits
-        max-width: 300px
+footer
+    background-color: colors.$md-sys-color-inverse-surface !important
+    .footer-wrapper
+        display: flex
+        direction: column
+        justify-content: center
         margin: auto
+        max-width: 1500px
+        padding-top: 30px
+        .footer-item
+            display: flex
+            flex-direction: column
+            align-items: center
+            .footer-item-container
+                width: 60%
+                .social-buttons
+                    width: 100%
+                    flex-direction: column
+                    align-items: stretch
+                    margin-top: 20px !important
+                    .social-buttons-container
+                        flex-direction: row
+                        width: 100%
+                        gap: 10px
+        #footer-company
+            display: flex
+            flex-direction: column
+            align-items: center
+            border-right-width: 1px
+            border-right-color: colors.$md-sys-color-on-background-dark
+            border-right-style: solid
+        #footer-contact
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+
+        .footer-heading
+            color: colors.$md-ref-palette-neutral-40
+        hr
+            color: colors.$md-sys-color-tertiary-container
+            width: 50px
+            border-width: 3px
+            opacity: 1
+            margin-bottom: 25px
+        .footer-content
+            line-height: 40px
+            .footer-text
+                a
+                    text-decoration: none !important
+                    color: colors.$md-sys-color-on-background-dark !important
+            color: colors.$md-sys-color-on-background-dark !important
+        .credits
+            display: flex !important
+            flex-direction: row !important
+            justify-content: right !important
+            width: 100%
+            .credits-wrapper
+                width: 300px !important
+
 
 /* .social-buttons
     display: inline-flex
