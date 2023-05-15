@@ -24,6 +24,10 @@ footer .footer-wrapper .footer-item .footer-item-container .social-buttons {
   align-items: stretch;
   margin-top: 20px !important;
 }
+footer .footer-wrapper .footer-item .footer-item-container .social-buttons .footer-heading {
+  margin-bottom: 10px !important;
+  color: #8e9099;
+}
 footer .footer-wrapper .footer-item .footer-item-container .social-buttons .social-buttons-container {
   flex-direction: row;
   width: 100%;
@@ -37,6 +41,9 @@ footer .footer-wrapper #footer-company {
   border-right-color: #e3e2e6;
   border-right-style: solid;
 }
+footer .footer-wrapper #footer-company .footer-content {
+  line-height: 40px;
+}
 footer .footer-wrapper #footer-contact {
   display: flex;
   flex-direction: column;
@@ -46,14 +53,14 @@ footer .footer-wrapper .footer-heading {
   color: #5e5e62;
 }
 footer .footer-wrapper hr {
-  color: #fbd7fc;
+  color: #715574;
   width: 50px;
   border-width: 3px;
   opacity: 1;
   margin-bottom: 25px;
 }
 footer .footer-wrapper .footer-content {
-  line-height: 40px;
+  line-height: 30px;
   color: #e3e2e6 !important;
 }
 footer .footer-wrapper .footer-content .footer-text a {
@@ -221,18 +228,19 @@ h2 {
 
 .social-buttons {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
 }
 .social-buttons h6 {
   text-align: center !important;
+  margin-bottom: 15px;
 }
 .social-buttons .social-buttons-container {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -261,8 +269,14 @@ h2 {
   #contact-info-section #contact-info-container {
     max-width: 893px;
   }
+  .social-buttons {
+    margin-top: 0px !important;
+  }
+  .social-buttons h6 {
+    margin-bottom: 20px;
+  }
   .social-buttons .social-buttons-container {
-    gap: 20px;
+    gap: 10px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -293,9 +307,15 @@ nav .navbar-toggler {
   gap: 5px;
 }
 .social-button a {
+  background-color: #715574;
+}
+.social-button a:hover {
   background-color: #fbd7fc;
 }
 .social-button a i {
+  color: #ffffff;
+}
+.social-button a i:hover {
   color: #29132d;
 }
 

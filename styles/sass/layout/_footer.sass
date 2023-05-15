@@ -20,10 +20,13 @@ footer
                     flex-direction: column
                     align-items: stretch
                     margin-top: 20px !important
+                    .footer-heading
+                        margin-bottom: 10px !important
+                        color: colors.$md-ref-palette-neutral-variant-60
                     .social-buttons-container
                         flex-direction: row
                         width: 100%
-                        gap: 10px
+                        gap: 10px                            
         #footer-company
             display: flex
             flex-direction: column
@@ -31,21 +34,22 @@ footer
             border-right-width: 1px
             border-right-color: colors.$md-sys-color-on-background-dark
             border-right-style: solid
+            .footer-content
+                line-height: 40px
         #footer-contact
             display: flex
             flex-direction: column
             align-items: flex-start
-
         .footer-heading
             color: colors.$md-ref-palette-neutral-40
         hr
-            color: colors.$md-sys-color-tertiary-container
+            color: colors.$md-sys-color-tertiary
             width: 50px
             border-width: 3px
             opacity: 1
             margin-bottom: 25px
         .footer-content
-            line-height: 40px
+            line-height: 30px
             .footer-text
                 a
                     text-decoration: none !important

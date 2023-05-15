@@ -23,16 +23,17 @@
 
 .social-buttons
     display: flex
-    flex-direction: row
+    flex-direction: column
     justify-content: center
     align-items: center
     margin-top: 40px
     h6
         text-align: center !important
+        margin-bottom: 15px
     .social-buttons-container
         display: flex
         flex-direction: row
-        gap: 20px
+        gap: 10px
 
 
 @media only screen and (min-width: 768px)
@@ -60,8 +61,11 @@
             max-width: 893px
     
     .social-buttons
+        margin-top: 0px !important
+        h6
+            margin-bottom: 20px
         .social-buttons-container
-            gap: 20px
+            gap: 10px
 
 
 @media only screen and (min-width: 1200px)
