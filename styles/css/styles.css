@@ -44,9 +44,6 @@ footer .footer-wrapper #footer-company {
   border-right-color: #e3e2e6;
   border-right-style: solid;
 }
-footer .footer-wrapper #footer-company .footer-content {
-  line-height: 40px;
-}
 footer .footer-wrapper #footer-contact {
   display: flex;
   flex-direction: column;
