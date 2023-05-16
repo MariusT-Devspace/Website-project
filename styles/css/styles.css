@@ -554,11 +554,15 @@ nav .navbar-toggler {
 
 #promotions-section #promotions-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: stretch;
+  align-content: center;
   column-gap: 30px;
   row-gap: 10px;
   flex-wrap: wrap;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 #promotions-section #promotions-container #cocina-card .row .card-image {
   background-image: url(../../../../img/cocina-promo.jpg);
@@ -568,15 +572,13 @@ nav .navbar-toggler {
 }
 #promotions-section #promotions-container .card {
   background-color: #d8e2ff;
-  width: 600px;
-  height: 190px;
 }
 #promotions-section #promotions-container .card .row .card-image {
-  height: 190px;
+  height: 200px;
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: cover !important;
-  border-radius: 0.5rem 0 0 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
   box-shadow: inset -4px 0px 11px 0px rgba(0, 0, 0, 0.75) !important;
   -webkit-box-shadow: inset -4px 0px 11px 0px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: inset -4px 0px 11px 0px rgba(0, 0, 0, 0.75) !important;
@@ -603,6 +605,19 @@ nav .navbar-toggler {
   font-size: 0.8rem;
 }
 
+@media only screen and (min-width: 768px) {
+  #promotions-container {
+    flex-direction: row !important;
+  }
+  #promotions-container .card {
+    width: 600px;
+    height: 190px;
+  }
+  #promotions-container .card .card-image {
+    height: 190px !important;
+    border-radius: 0.5rem 0 0 0.5rem !important;
+  }
+}
 #map {
   display: flex;
   flex-direction: column;

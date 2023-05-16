@@ -3,32 +3,32 @@
 #promotions-section
     #promotions-container
         display: flex
-        flex-direction: row
+        flex-direction: column
         justify-content: center
+        align-items: stretch
+        align-content: center
         column-gap: 30px
         row-gap: 10px
         flex-wrap: wrap
+        padding-left: 10px !important
+        padding-right: 10px !important
         #cocina-card
             .row    
                 .card-image
                     background-image: url(../../../../img/cocina-promo.jpg)
-
         #baño-card
             .row    
                 .card-image
                     background-image: url(../../../../img/baño-promo.jpg)
-
         .card
             background-color: colors.$md-sys-color-primary-container
-            width: 600px
-            height: 190px
             .row    
                 .card-image
-                    height: 190px
+                    height: 200px
                     background-repeat: no-repeat !important
                     background-position: center !important
                     background-size: cover !important
-                    border-radius: .5rem 0 0 .5rem
+                    border-radius: .5rem .5rem 0 0
                     box-shadow: inset -4px 0px 11px 0px rgba(0, 0, 0, 0.75) !important
                     -webkit-box-shadow: inset -4px 0px 11px 0px rgba(0, 0, 0, 0.75) !important
                     -moz-box-shadow: inset -4px 0px 11px 0px rgba(0, 0, 0, 0.75) !important
@@ -50,3 +50,13 @@
                             padding: 0.5rem
                             color: colors.$md-sys-color-on-tertiary
                             font-size: 0.8rem
+
+@media only screen and (min-width: 768px)
+    #promotions-container
+        flex-direction: row !important
+        .card
+            width: 600px
+            height: 190px
+            .card-image
+                height: 190px !important
+                border-radius: .5rem 0 0 .5rem !important
