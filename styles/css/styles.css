@@ -431,6 +431,11 @@ nav .navbar-toggler {
   padding-bottom: 0px;
 }
 
+.trust-item-row {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
 .trust-item {
   display: flex;
   flex-direction: column;
