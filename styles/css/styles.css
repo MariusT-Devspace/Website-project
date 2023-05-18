@@ -265,6 +265,15 @@ h2 {
   margin-right: auto;
 }
 
+#work-section .section-wrapper {
+  max-width: 650px !important;
+}
+
+@media only screen and (min-width: 992px) {
+  #work-section .section-wrapper {
+    max-width: 1050px !important;
+  }
+}
 .header-intro-contact {
   width: 100% !important;
   height: 300px !important;
@@ -396,6 +405,7 @@ nav .navbar-toggler {
 nav .navbar-collapse .navbar-nav {
   line-height: 2rem;
   padding-top: 10px;
+  color: #d8e2ff !important;
 }
 
 @media only screen and (min-width: 992px) {
@@ -436,14 +446,20 @@ nav .navbar-collapse .navbar-nav {
 }
 
 #work-section .card {
-  max-width: 20rem;
+  max-width: 28rem;
   min-height: 470px;
+  margin-bottom: 20px;
 }
 #work-section .card .card-body {
   padding-top: 15px;
   padding-bottom: 0px;
 }
 
+@media only screen and (min-width: 1024px) {
+  #work-section .card {
+    max-width: 20rem !important;
+  }
+}
 .trust-item-row {
   padding-left: 5px !important;
   padding-right: 5px !important;
