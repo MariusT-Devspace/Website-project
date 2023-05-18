@@ -54,6 +54,7 @@ footer .footer-wrapper #footer-contact ul li:last-child {
 }
 footer .footer-wrapper .footer-heading {
   color: #5e5e62;
+  margin-top: 20px !important;
 }
 footer .footer-wrapper hr {
   color: #715574;
@@ -125,6 +126,9 @@ footer .footer-wrapper .credits .credits-wrapper {
     word-wrap: break-word !important;
     word-break: break-word !important;
   }
+  footer .footer-wrapper .footer-heading {
+    margin-top: 0px !important;
+  }
   footer .footer-wrapper hr {
     margin-bottom: 25px;
   }
@@ -146,9 +150,8 @@ footer .footer-wrapper .credits .credits-wrapper {
     padding-top: 30px;
   }
   footer .footer-wrapper .footer-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start !important;
+    padding-left: 5%;
   }
   footer .footer-wrapper #footer-company .footer-item-container {
     width: 360px !important;

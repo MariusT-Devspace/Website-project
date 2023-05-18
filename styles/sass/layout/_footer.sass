@@ -47,6 +47,7 @@ footer
                         width: 210px !important
         .footer-heading
             color: colors.$md-ref-palette-neutral-40
+            margin-top: 20px !important
         hr
             color: colors.$md-sys-color-tertiary
             width: 50px
@@ -104,6 +105,8 @@ footer
                                 width: 83% !important
                                 word-wrap: break-word !important
                                 word-break: break-word !important
+            .footer-heading
+                margin-top: 0px !important
             hr
                 margin-bottom: 25px
             .credits
@@ -122,9 +125,8 @@ footer
             max-width: 1200px
             padding-top: 30px
             .footer-item
-                display: flex
-                flex-direction: column
-                align-items: center                       
+                align-items: flex-start !important
+                padding-left: 5%
             #footer-company
                 .footer-item-container
                     width: 360px !important
