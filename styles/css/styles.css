@@ -445,6 +445,11 @@ nav .navbar-collapse .navbar-nav {
   width: 40px;
 }
 
+.cocina-card {
+  background-color: #d8e2ff;
+  padding: 20px;
+}
+
 #work-section .card {
   max-width: 28rem;
   min-height: 470px;
