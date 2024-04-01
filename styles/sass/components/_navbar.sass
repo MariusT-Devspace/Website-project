@@ -1,11 +1,12 @@
 @use "../utils/_colors"
+@use "../utils/_theme" as theme
 
 nav
-    background-color: colors.$md-sys-color-primary
+    background-color: theme.$md-sys-color-surface-container
     a
-        color: colors.$md-sys-color-on-primary !important
+        color: theme.$md-sys-color-on-surface !important
     .navbar-toggler
-        color: colors.$md-sys-color-on-primary !important
+        color: theme.$md-sys-color-on-surface !important
     .navbar-collapse
         .navbar-nav
             line-height: 2rem

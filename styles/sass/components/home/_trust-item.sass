@@ -1,5 +1,6 @@
 @use "../../utils/_mixins" 
 @use "../../utils/_colors"
+@use "../../utils/_theme"
 
 .trust-item-row
     padding-left: 5px !important
@@ -10,7 +11,8 @@
     gap: 24px
     margin-bottom: 30px
     padding: 1.2rem
-    background-color: colors.$md-sys-color-primary-container
+    background-color: theme.$md-sys-color-surface-variant
+    border-radius: 28px 28px 28px 28px
     height: 90%
 
     .trust-item-header

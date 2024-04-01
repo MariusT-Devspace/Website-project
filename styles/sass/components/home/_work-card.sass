@@ -1,13 +1,11 @@
 @use "../../utils/_colors"
+@use "../../utils/_theme" as theme
 
 #work-section
     .card
         max-width: 28rem
-        min-height: 470px
         margin-bottom: 20px
-        .card-body
-            padding-top: 15px
-            padding-bottom: 0px
+        background-color: theme.$md-sys-color-surface-variant
 
 @media only screen and (min-width: 1024px)
     #work-section

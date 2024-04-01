@@ -53,7 +53,7 @@
     <header class="container-fluid p-0">
       <!-- Navbar -->
       <nav
-        class="navbar sticky-top navbar-expand-lg navbar-light primary-container-bg pt-3 pb-3 justify-content-between"
+        class="navbar sticky-top navbar-expand-lg pt-3 pb-3 justify-content-between"
       >
         <!-- Container wrapper -->
         <div class="container-fluid w-100">
@@ -108,9 +108,9 @@
         </div>
       </div>
     </header>
-    <div class="content-wrapper d-flex flex-column align-items-center mt-5">
+    <div class="content-wrapper d-flex flex-column align-items-center">
       <section
-        class="container-fluid container-padding section-padding-top secondary-container-bg mt-4"
+        class="container-fluid container-padding section-padding-top section-bg"
         id="intro-section"
       >
         <div class="section-wrapper">
@@ -162,7 +162,7 @@
         </div>
       </section>
 
-      <section class="" id="cocina-section" style="display: none;">
+      <section id="cocina-section" style="display: none;">
         <div class="section-wrapper">
           <div class="cocina-content container-fluid container-padding">
             <div class="card cocina-card rounded-9">
@@ -287,13 +287,13 @@
         </div>
       </section>
       
-      <section class="mt-5 mb-4" id="promotions-section">
+      <section class="mb-4" id="promotions-section">
         <div class="section-wrapper">
-          <h2 class="text-center">Disfruta de nuestras promociones</h2>
+          <h4 class="section-title">Disfruta de nuestras promociones</h4>
           <div class="pt-4 pb-4" id="promotions-container">
-            <div class="card mb-3" style="max-width: 540px" id="cocina-card">
+            <div class="card mb-3 rounded-6" id="cocina-card">
               <div class="row g-0">
-                <div class="col-md-4 card-image">
+                <div class="col-md-4 card-image rounded-6">
                   <!--
             <img
               src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
@@ -304,9 +304,9 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <div>
+                    <div class="promotions-card-header">
                       <h4 class="card-title">Cocina</h4>
-                      <h5 class="card-subtitle mb-2 text-muted">2260€</h5>
+                      <h6>2260€</h6>
                     </div>
                     <div class="card-text mb-5">
                       <span class="rounded-8">Cemento cola</span>
@@ -318,9 +318,9 @@
               </div>
             </div>
 
-            <div class="card mb-3" style="max-width: 540px" id="baño-card">
+            <div class="card mb-3 rounded-6" id="baño-card">
               <div class="row g-0">
-                <div class="col-md-4 card-image">
+                <div class="col-md-4 card-image rounded-6">
                   <!--
             <img
               src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
@@ -331,9 +331,9 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <div>
+                    <div class="d-flex flex-column">
                       <h4 class="card-title">Baño</h4>
-                      <h5 class="card-subtitle mb-2 text-muted">2460€</h5>
+                      <h6 class="card-subtitle mb-2">2460€</h6>
                     </div>
 
                     <div class="card-text">
@@ -353,9 +353,9 @@
         </div>
       </section>
 
-      <section class=" " id="about-section">
+      <section id="about-section">
         <div class="section-wrapper about-content container-fluid">
-          <h2>Sobre nosotros</h2>
+          <h2 class="section-title">Sobre nosotros</h2>
           <p class="text-center lead">
             <span class="fw-bold">Construcciones Reformas Adan</span> nace con
             la finalidad de ofrecer todos los servicios para la gestión integral
@@ -389,7 +389,7 @@
         id="trust-section"
       >
         <div class="section-wrapper">
-          <h2 class="text-center mb-5">
+          <h2 class="section-title">
             Motivos para confiar en nuestro trabajo
           </h2>
 
@@ -484,9 +484,9 @@
         </div>
       </section>
 
-      <section class="section-padding-top" id="services-section">
+      <section class="section-padding-top section-bg" id="services-section">
         <div class="section-wrapper servicios-content container-fluid">
-          <h2 class="text-center mt-2">Servicios</h2>
+          <h2 class="section-title mt-2">Servicios</h2>
           <ul class="list-group list-group-light text-center fs-4">
             <li class="list-group-item bg-transparent border-0 w-30 mx-auto">
               Construcciones
@@ -518,57 +518,51 @@
         id="work-section"
       >
         <div class="section-wrapper">
-          <h2 class="pb-2">Trabajos realizados</h2>
+          <h2 class="section-title pb-2">Trabajos realizados</h2>
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
             <div class="col">
-              <div class="card mt-3 mx-auto">
+              <div class="card mt-3 mx-auto rounded-6">
                 <img
                   src="img/fachada.jpeg"
-                  class="card-img-top"
+                  class="card-img-top rounded-6"
                   alt="Sunset Over the Sea"
                 />
                 <div class="card-body">
                   <h6 class="card-title lead">
                     Rehabilitación fachada vivienda unifamiliar
                   </h6>
-                </div>
-                <div class="card-footer">
                   <a href="" class="card-link">Ver más</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
-              <div class="card mt-3 mx-auto">
+              <div class="card mt-3 mx-auto rounded-6">
                 <img
                   src="img/terraza_2.jpeg"
-                  class="card-img-top"
+                  class="card-img-top rounded-6"
                   alt="Sunset Over the Sea"
                 />
                 <div class="card-body">
                   <h6 class="card-title lead">
                     Reforma y mejoría terraza existente
                   </h6>
-                </div>
-                <div class="card-footer">
                   <a href="" class="card-link">Ver más</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
-              <div class="card mt-3 mx-auto">
+              <div class="card mt-3 mx-auto rounded-6">
                 <img
                   src="img/reforma-cocina.jpg"
-                  class="card-img-top"
+                  class="card-img-top rounded-6"
                   alt="Sunset Over the Sea"
                 />
                 <div class="card-body">
                   <h6 class="card-title lead">
                     Reforma cocina
                   </h6>
-                </div>
-                <div class="card-footer">
                   <a href="" class="card-link">Ver más</a>
                 </div>
               </div>
@@ -576,10 +570,10 @@
 
 
             <div class="col">
-              <div class="card mt-3 mx-auto">
+              <div class="card mt-3 mx-auto rounded-6">
                 <img
                   src="img/terraza_transitable_1.jpeg"
-                  class="card-img-top"
+                  class="card-img-top rounded-6"
                   alt="Sunset Over the Sea"
                 />
                 <div class="card-body">
@@ -587,40 +581,34 @@
                     Saneamiento antepecho, impermeabilización terraza
                     transitable
                   </h6>
-                </div>
-                <div class="card-footer">
                   <a href="" class="card-link">Ver más</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
-              <div class="card mt-3 mx-auto">
+              <div class="card mt-3 mx-auto rounded-6">
                 <img
                   src="img/reforma-casa-after.jpeg"
-                  class="card-img-top"
+                  class="card-img-top rounded-6"
                   alt="Sunset Over the Sea"
                 />
                 <div class="card-body">
                   <h6 class="card-title lead">Reformas casa</h6>
-                </div>
-                <div class="card-footer">
                   <a href="" class="card-link">Ver más</a>
                 </div>
               </div>
             </div>
 
             <div class="col">
-              <div class="card mt-3 mx-auto">
+              <div class="card mt-3 mx-auto rounded-6">
                 <img
                   src="img/pasillo_piscina_1.jpeg"
-                  class="card-img-top"
+                  class="card-img-top rounded-6"
                   alt="Sunset Over the Sea"
                 />
                 <div class="card-body">
                   <h6 class="card-title lead">Pasillo piscina de madera</h6>
-                </div>
-                <div class="card-footer">
                   <a href="" class="card-link">Ver más</a>
                 </div>
               </div>

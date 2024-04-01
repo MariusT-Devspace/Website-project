@@ -1,62 +1,79 @@
 @use "../../utils/_colors"
+@use "../../utils/_theme" as theme
 
 #promotions-section
-    #promotions-container
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: stretch
-        align-content: center
-        column-gap: 30px
-        row-gap: 10px
-        flex-wrap: wrap
-        padding-left: 10px !important
-        padding-right: 10px !important
-        #cocina-card
-            .row    
-                .card-image
-                    background-image: url(../../../../img/cocina-promo.jpg)
-        #baño-card
-            .row    
-                .card-image
-                    background-image: url(../../../../img/baño-promo.jpg)
-        .card
-            background-color: colors.$md-sys-color-primary-container
-            .row    
-                .card-image
-                    height: 200px
-                    background-repeat: no-repeat !important
-                    background-position: center !important
-                    background-size: cover !important
-                    border-radius: .5rem .5rem 0 0
-                    box-shadow: inset -4px 0px 11px 0px rgba(0, 0, 0, 0.75) !important
-                    -webkit-box-shadow: inset -4px 0px 11px 0px rgba(0, 0, 0, 0.75) !important
-                    -moz-box-shadow: inset -4px 0px 11px 0px rgba(0, 0, 0, 0.75) !important
-                .card-body
-                    height: 100%
-                    display: flex
-                    flex-direction: column
-                    justify-content: space-between
-                    padding: 20px !important
-                    .card-text
+    .section-wrapper
+        width: 80%
+        border-radius: 28px 28px 28px 28px
+        padding-top: 20px
+        border: solid
+        border-width: 1.2px
+        border-color: theme.$md-sys-color-outline
+        #promotions-container
+            display: flex
+            flex-direction: column
+            align-items: center
+            column-gap: 30px
+            row-gap: 10px
+            flex-wrap: wrap
+            padding-left: 10px !important
+            padding-right: 10px !important
+            #cocina-card
+                .row    
+                    .card-image
+                        background-image: url(../../../../img/cocina-promo.jpg)
+            #baño-card
+                .row    
+                    .card-image
+                        background-image: url(../../../../img/baño-promo.jpg)
+            .card
+                width: 98%
+                max-width: 390px
+                background-color: theme.$md-sys-color-surface-variant
+                box-shadow: none
+                .row    
+                    .card-image
+                        height: 300px
+                        background-repeat: no-repeat !important
+                        background-position: center !important
+                        background-size: cover !important
+                    .card-body
+                        height: 100%
                         display: flex
-                        flex-direction: row
-                        flex-wrap: wrap
-                        row-gap: 5px
-                        column-gap: 10px
-                        margin-bottom: 0px !important
-                        span
-                            background-color: colors.$md-sys-color-tertiary
-                            padding: 0.5rem
-                            color: colors.$md-sys-color-on-tertiary
-                            font-size: 0.8rem
+                        flex-direction: column
+                        justify-content: start
+                        align-items: start
+                        color: theme.$md-sys-color-on-surface
+                        gap: 20px
+                        h6
+                            color: theme.$md-sys-color-on-surface-variant
+                        .card-text
+                            display: flex 
+                            flex-direction: row
+                            justify-content: start
+                            flex-wrap: wrap
+                            row-gap: 5px
+                            column-gap: 10px
+                            margin-bottom: 0 !important
+                            span
+                                font-size: 0.94rem
+                                background-color: theme.$md-sys-color-secondary-container
+                                color: theme.$md-sys-color-on-secondary-container
+                                padding: 7px
 
 @media only screen and (min-width: 768px)
-    #promotions-container
-        flex-direction: row !important
-        .card
-            width: 600px
-            height: 190px
-            .card-image
-                height: 190px !important
-                border-radius: .5rem 0 0 .5rem !important
+    #promotions-section
+        .section-wrapper
+            padding: 30px
+            max-width: 777px
+            .section-title
+                width: 100% !important
+                max-width: 100% !important
+                text-align: start
+            #promotions-container
+                flex-direction: column !important
+                .card
+                    max-width: 650px !important
+                    height: 240px !important
+                    .card-image
+                        height: 240px !important
