@@ -1,7 +1,8 @@
 @use "../utils/_colors"
+@use "../utils/_theme"
 
 footer
-    background-color: colors.$md-sys-color-inverse-surface !important
+    background-color: theme.$md-sys-color-inverse-surface !important
     .footer-wrapper
         display: flex
         flex-direction: column
@@ -49,7 +50,7 @@ footer
             color: colors.$md-ref-palette-neutral-40
             margin-top: 20px !important
         hr
-            color: colors.$md-sys-color-tertiary
+            color: theme.$md-sys-color-tertiary
             width: 50px
             border-width: 3px
             opacity: 1

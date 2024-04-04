@@ -1,4 +1,5 @@
 @use "../../utils/_colors"
+@use "../../utils/_theme"
 
 .contact-info-item
     display: flex
@@ -6,7 +7,7 @@
     align-items: center
     gap: 10px
     i
-        color: colors.$md-sys-color-tertiary
+        color: theme.$md-sys-color-tertiary
     .contact-details-container
         display: flex
         flex-direction: column
@@ -22,8 +23,6 @@
     display: flex
     flex-direction: column
     align-items: center !important
-    #location-desktop-icon
-        color: colors.$md-sys-color-tertiary !important
 
 
 @media only screen and (min-width: 768px)
@@ -35,8 +34,6 @@
         flex-direction: row
         gap: 25px
         align-items: flex-start
-        i
-            color: colors.$md-sys-color-tertiary
         .contact-details-container
             display: flex
             flex-direction: column

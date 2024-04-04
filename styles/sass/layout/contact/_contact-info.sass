@@ -1,11 +1,11 @@
 @use "../../utils/_colors"
+@use "../../utils/_theme"
 
 #contact-info-section
     width: 100%
     margin-top: 0px
     #contact-info-container
         width: 100%
-        background-color: colors.$md-ref-palette-neutral-variant-95 !important
         margin: 0px
         padding-top: 20px
         padding-bottom: 40px
@@ -45,6 +45,8 @@
             max-width: 793px
             height: 500px
             padding: 0px
+            border-radius: .75rem
+            background-color: theme.$md-sys-color-surface-variant !important
             #contact-info-card
                 padding: 40px
                 .contact-info-content
@@ -62,7 +64,6 @@
             max-width: 893px
     
     .social-buttons
-        margin-top: 0px !important
         h6
             margin-bottom: 20px
         .social-buttons-container

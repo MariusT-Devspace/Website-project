@@ -1,9 +1,11 @@
 @use "../../utils/_colors"
+@use "../../utils/_theme"
 
 
 #contact-form
     max-width: 800px
-    padding: 0px 2% !important
+    padding: 40px 0px 30px !important
+    background-color: theme.$md-sys-color-surface-container
     //color: colors.$md-sys-color-inverse-on-surface 
     input:-webkit-autofill,
     input:-webkit-autofill:hover,
@@ -17,7 +19,8 @@
         // transition: none  !important
         background-color: #332D2D !important
         //-webkit-text-fill-color: colors.$md-sys-color-inverse-on-surface !important
-        -webkit-box-shadow: 0 0 0px 1000px colors.$md-sys-color-background inset
+        -webkit-box-shadow: 0 0 0 1000px theme.$md-sys-color-surface-container-lowest inset
+        border-radius: 10px !important
         transition: background-color 5000s ease-in-out 0s
     .form-outline
         .form-control:focus~
@@ -34,7 +37,7 @@
                     border-top: .165rem solid colors.$md-sys-color-tertiary !important
                     border-right: .165rem solid colors.$md-sys-color-tertiary !important
                     border-bottom: .165rem solid colors.$md-sys-color-tertiary !important
-                    box-shadow: none!important
+                    box-shadow: none !important
     .form-outline
         .form-control:focus~
             .form-notch
@@ -43,17 +46,28 @@
                     border-bottom: .165rem solid colors.$md-sys-color-tertiary !important
                     box-shadow: none !important
     .form-outline
+        .form-control
+            position: relative
+            z-index: 99
         .form-control~
             .form-notch
                 .form-notch-leading
+                    background-color: theme.$md-sys-color-surface-container-highest
                     border-radius: 10px 0 0 10px
     .form-outline
         .form-control~
             .form-notch
                 .form-notch-trailing
-                    border-radius: 0 10px 10px 0              
+                    background-color: theme.$md-sys-color-surface-container-highest
+                    border-radius: 0 10px 10px 0
+    .form-outline
+        .form-control~
+            .form-notch 
+                .form-notch-middle       
+                    background-color: theme.$md-sys-color-surface-container-highest
     label
-        color: #4f4f4f !important
+        color: theme.$md-sys-color-on-surface-variant !important
+        z-index: 99
     input:-webkit-autofill:not(:focus) + label
         transform: translateY(-1rem) translateY(0.1rem) scale(0.8)
     input:-webkit-autofill:not(:focus) ~ .form-notch

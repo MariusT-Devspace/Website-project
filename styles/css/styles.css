@@ -39,7 +39,7 @@ section .section-title {
   }
 }
 footer {
-  background-color: #303033 !important;
+  background-color: #2e3037 !important;
 }
 footer .footer-wrapper {
   display: flex;
@@ -96,7 +96,7 @@ footer .footer-wrapper .footer-heading {
   margin-top: 20px !important;
 }
 footer .footer-wrapper hr {
-  color: #715574;
+  color: #6f2888;
   width: 50px;
   border-width: 3px;
   opacity: 1;
@@ -320,7 +320,6 @@ footer .footer-wrapper .credits .credits-wrapper {
 }
 #contact-info-section #contact-info-container {
   width: 100%;
-  background-color: #eff0fa !important;
   margin: 0px;
   padding-top: 20px;
   padding-bottom: 40px;
@@ -366,6 +365,8 @@ footer .footer-wrapper .credits .credits-wrapper {
     max-width: 793px;
     height: 500px;
     padding: 0px;
+    border-radius: 0.75rem;
+    background-color: #dde2f1 !important;
   }
   #contact-info-section #contact-info-container #contact-info-card {
     padding: 40px;
@@ -382,9 +383,6 @@ footer .footer-wrapper .credits .credits-wrapper {
 @media only screen and (min-width: 992px) {
   #contact-info-section #contact-info-container {
     max-width: 893px;
-  }
-  .social-buttons {
-    margin-top: 0px !important;
   }
   .social-buttons h6 {
     margin-bottom: 20px;
@@ -432,16 +430,16 @@ nav .navbar-collapse .navbar-nav {
   gap: 5px;
 }
 .social-button a {
-  background-color: #715574;
+  background-color: #00498e;
 }
 .social-button a:hover {
-  background-color: #fbd7fc;
+  background-color: #166dca;
 }
 .social-button a i {
   color: #ffffff;
 }
 .social-button a i:hover {
-  color: #29132d;
+  color: #ffffff;
 }
 
 .intro-icon {
@@ -506,12 +504,18 @@ nav .navbar-collapse .navbar-nav {
 }
 
 #promotions-section .section-wrapper {
-  width: 80%;
+  width: 95%;
+  max-width: 537px;
   border-radius: 28px 28px 28px 28px;
   padding-top: 20px;
   border: solid;
   border-width: 1.2px;
-  border-color: #727784;
+  border-color: #c1c6d4;
+}
+#promotions-section .section-wrapper .section-title {
+  text-align: start;
+  width: 75%;
+  margin-left: 30px;
 }
 #promotions-section .section-wrapper #promotions-container {
   display: flex;
@@ -599,6 +603,7 @@ nav .navbar-collapse .navbar-nav {
 }
 #map iframe {
   margin-left: 0px;
+  border-radius: 0.75rem;
 }
 
 @media only screen and (min-width: 397px) {
@@ -629,7 +634,7 @@ nav .navbar-collapse .navbar-nav {
   gap: 10px;
 }
 .contact-info-item i {
-  color: #715574;
+  color: #6f2888;
 }
 .contact-info-item .contact-details-container {
   display: flex;
@@ -650,9 +655,6 @@ nav .navbar-collapse .navbar-nav {
   flex-direction: column;
   align-items: center !important;
 }
-#contact-location-desktop #location-desktop-icon {
-  color: #715574 !important;
-}
 
 @media only screen and (min-width: 768px) {
   #contact-info-email {
@@ -663,9 +665,6 @@ nav .navbar-collapse .navbar-nav {
     flex-direction: row;
     gap: 25px;
     align-items: flex-start;
-  }
-  .contact-info-item i {
-    color: #715574;
   }
   .contact-info-item .contact-details-container {
     display: flex;
@@ -693,7 +692,8 @@ nav .navbar-collapse .navbar-nav {
 }
 #contact-form {
   max-width: 800px;
-  padding: 0px 2% !important;
+  padding: 40px 0px 30px !important;
+  background-color: #ecedf6;
 }
 #contact-form input:-webkit-autofill,
 #contact-form input:-webkit-autofill:hover,
@@ -702,7 +702,8 @@ nav .navbar-collapse .navbar-nav {
 #contact-form textarea:-webkit-autofill:hover,
 #contact-form textarea:-webkit-autofill:focus {
   background-color: #332D2D !important;
-  -webkit-box-shadow: 0 0 0px 1000px #fefbff inset;
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
+  border-radius: 10px !important;
   transition: background-color 5000s ease-in-out 0s;
 }
 #contact-form .form-outline .form-control:focus ~ .form-notch .form-notch-leading {
@@ -722,14 +723,24 @@ nav .navbar-collapse .navbar-nav {
   border-bottom: 0.165rem solid #715574 !important;
   box-shadow: none !important;
 }
+#contact-form .form-outline .form-control {
+  position: relative;
+  z-index: 99;
+}
 #contact-form .form-outline .form-control ~ .form-notch .form-notch-leading {
+  background-color: #e1e2ea;
   border-radius: 10px 0 0 10px;
 }
 #contact-form .form-outline .form-control ~ .form-notch .form-notch-trailing {
+  background-color: #e1e2ea;
   border-radius: 0 10px 10px 0;
 }
+#contact-form .form-outline .form-control ~ .form-notch .form-notch-middle {
+  background-color: #e1e2ea;
+}
 #contact-form label {
-  color: #4f4f4f !important;
+  color: #414752 !important;
+  z-index: 99;
 }
 #contact-form input:-webkit-autofill:not(:focus) + label {
   transform: translateY(-1rem) translateY(0.1rem) scale(0.8);
