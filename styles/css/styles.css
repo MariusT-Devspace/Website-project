@@ -690,10 +690,13 @@ nav .navbar-collapse .navbar-nav {
     margin-top: -5px;
   }
 }
+#contact-form-section {
+  background-color: #ecedf6;
+}
+
 #contact-form {
   max-width: 800px;
-  padding: 40px 0px 30px !important;
-  background-color: #ecedf6;
+  padding: 0 0 30px !important;
 }
 #contact-form input:-webkit-autofill,
 #contact-form input:-webkit-autofill:hover,
