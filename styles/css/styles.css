@@ -234,7 +234,7 @@ footer .footer-wrapper .credits .credits-wrapper {
 #intro-section .section-wrapper {
   max-width: 600px;
 }
-#intro-section .section-wrapper .row div {
+#intro-section .section-wrapper .row .col {
   display: flex;
   flex-direction: column;
   align-items: center;
