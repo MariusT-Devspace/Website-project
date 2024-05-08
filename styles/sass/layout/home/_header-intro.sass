@@ -1,4 +1,4 @@
-@use "../../utils/_colors"
+@use "../../utils/_theme"
 
 .header-intro
     width: 100% !important
@@ -9,11 +9,9 @@
     background-size: cover !important
     background-color: rgba(0, 0, 0, 0.5)
     background-blend-mode: darken
+    color: theme.$md-sys-color-on-primary
     h1
-        color: colors.$md-sys-color-on-primary
         margin-top: 50px
-    p
-        color: colors.$md-sys-color-surface-variant-light
     
 @media only screen and (min-width: 768px)
     .header-intro

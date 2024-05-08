@@ -2,7 +2,7 @@
 body {
   font-size: 17px !important;
   background-color: #f9f9ff;
-  color: #1b1b1f;
+  color: #191c21;
 }
 
 .content-wrapper {
@@ -81,7 +81,7 @@ footer .footer-wrapper #footer-company {
   flex-direction: column;
   align-items: center;
   border-right-width: 1px;
-  border-right-color: #e3e2e6;
+  border-right-color: #eff0f9;
   border-right-style: solid;
 }
 footer .footer-wrapper #footer-contact {
@@ -96,7 +96,7 @@ footer .footer-wrapper .footer-heading {
   margin-top: 20px !important;
 }
 footer .footer-wrapper hr {
-  color: #6f2888;
+  color: #715574;
   width: 50px;
   border-width: 3px;
   opacity: 1;
@@ -105,11 +105,11 @@ footer .footer-wrapper hr {
 }
 footer .footer-wrapper .footer-content {
   line-height: 34px;
-  color: #e3e2e6 !important;
+  color: #eff0f9;
 }
 footer .footer-wrapper .footer-content .footer-text a {
-  text-decoration: none !important;
-  color: #e3e2e6 !important;
+  text-decoration: none;
+  color: #eff0f9;
 }
 footer .footer-wrapper .credits {
   display: flex !important;
@@ -214,13 +214,10 @@ footer .footer-wrapper .credits .credits-wrapper {
   background-size: cover !important;
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
+  color: #ffffff;
 }
 .header-intro h1 {
-  color: #ffffff;
   margin-top: 50px;
-}
-.header-intro p {
-  color: #e1e2ec;
 }
 
 @media only screen and (min-width: 768px) {
@@ -302,9 +299,6 @@ footer .footer-wrapper .credits .credits-wrapper {
   width: min-content;
   direction: row;
   margin-bottom: 40px;
-}
-.social-container-contact .social-content-contact h5 {
-  color: #f2f0f4 !important;
 }
 
 #contact-info-section {
@@ -407,7 +401,6 @@ nav .navbar-toggler {
 nav .navbar-collapse .navbar-nav {
   line-height: 2rem;
   padding-top: 10px;
-  color: #d8e2ff !important;
 }
 
 @media only screen and (min-width: 992px) {
@@ -451,6 +444,7 @@ nav .navbar-collapse .navbar-nav {
   max-width: 28rem;
   margin-bottom: 20px;
   background-color: #dde2f1;
+  color: #191c21;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -564,8 +558,8 @@ nav .navbar-collapse .navbar-nav {
 }
 #promotions-section .section-wrapper #promotions-container .card .row .card-body .card-text span {
   font-size: 0.94rem;
-  background-color: #c5d9ff;
-  color: #2b4265;
+  background-color: #495f84;
+  color: #ffffff;
   padding: 7px;
 }
 
@@ -747,6 +741,9 @@ nav .navbar-collapse .navbar-nav {
 #contact-form input:-webkit-autofill:not(:focus) ~ .form-notch .form-notch-middle {
   border-top: 0;
   box-shadow: none !important;
+}
+#contact-form .btn {
+  background-color: #00498e;
 }
 
 /*# sourceMappingURL=styles.css.map */
