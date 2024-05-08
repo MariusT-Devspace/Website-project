@@ -488,7 +488,15 @@ nav .navbar-collapse .navbar-nav {
 }
 
 .servicios-content .list-group-item {
-  padding: 5px !important;
+  padding: 10px !important;
+  color: #191c21;
+}
+.servicios-content hr {
+  color: #715574;
+  width: 20px;
+  border-width: 3px;
+  opacity: 1;
+  margin: 10px auto 10px auto;
 }
 
 #promotions-section .section-wrapper {
