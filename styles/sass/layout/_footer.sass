@@ -1,4 +1,3 @@
-@use "../utils/_colors"
 @use "../utils/_theme"
 
 footer
@@ -25,7 +24,7 @@ footer
                     margin-top: 20px !important
                     .footer-heading
                         margin-bottom: 10px !important
-                        color: colors.$md-ref-palette-neutral-variant-60
+                        color: theme.$md-ref-palette-neutral-variant-60
                         font-size: 1rem
                     .social-buttons-container
                         flex-direction: row
@@ -37,7 +36,7 @@ footer
             flex-direction: column
             align-items: center
             border-right-width: 1px
-            border-right-color: colors.$md-sys-color-on-background-dark
+            border-right-color: theme.$md-sys-color-inverse-on-surface
             border-right-style: solid
         #footer-contact
             display: flex
@@ -47,10 +46,10 @@ footer
                     &:last-child
                         width: 210px !important
         .footer-heading
-            color: colors.$md-ref-palette-neutral-40
+            color: theme.$md-ref-palette-neutral-40
             margin-top: 20px !important
         hr
-            color: theme.$md-sys-color-tertiary
+            color: theme.$md-ref-palette-tertiary-40
             width: 50px
             border-width: 3px
             opacity: 1
@@ -58,11 +57,11 @@ footer
             margin-top: 0px
         .footer-content
             line-height: 34px
-            color: colors.$md-sys-color-on-background-dark !important
+            color: theme.$md-sys-color-inverse-on-surface
             .footer-text
                 a
-                    text-decoration: none !important
-                    color: colors.$md-sys-color-on-background-dark !important
+                    text-decoration: none
+                    color: theme.$md-sys-color-inverse-on-surface
         .credits
             display: flex !important
             flex-direction: row !important

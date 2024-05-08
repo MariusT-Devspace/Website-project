@@ -1,12 +1,11 @@
-@use "../../utils/_colors"
+@use "../../utils/_mixins.sass"
 
 #intro-section
     padding-bottom: 60px
     .section-wrapper
         max-width: 600px
         .row
-            div
-                display: flex
-                flex-direction: column
-                align-items: center
-            
+            .col
+                @include mixins.flex-column-aligncenter 
+                gap: 20px
+                margin-bottom: 20px
