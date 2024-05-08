@@ -238,15 +238,8 @@ footer .footer-wrapper .credits .credits-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#cocina-section {
-  width: 100% !important;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-#cocina-section .cocina-content {
-  max-width: 900px;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 #about-section {
@@ -452,11 +445,6 @@ nav .navbar-collapse .navbar-nav {
 }
 .intro-icon img {
   width: 40px;
-}
-
-.cocina-card {
-  background-color: #d8e2ff;
-  padding: 20px;
 }
 
 #work-section .card {
