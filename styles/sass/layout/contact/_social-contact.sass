@@ -1,7 +1,7 @@
+@use "../../utils/_mixins"
+
 .social-container-contact
-    display: flex
-    direction: row
-    justify-content: center
+    @include mixins.flex-row-justifycenter
     .social-content-contact
         display: inline-flex
         width: min-content

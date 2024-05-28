@@ -1,22 +1,17 @@
 @use "../utils/_theme"
+@use "../utils/_mixins"
 
 footer
     background-color: theme.$md-sys-color-inverse-surface !important
     .footer-wrapper
-        display: flex
-        flex-direction: column
-        align-items: center
+        @include mixins.flex-column-aligncenter
         margin: auto
         padding-top: 30px
         .footer-item
-            display: flex
-            flex-direction: column
-            align-items: center
+            @include mixins.flex-column-aligncenter
             .footer-item-container
                 width: 60%
-                display: flex
-                flex-direction: column
-                align-items: center
+                @include mixins.flex-column-aligncenter
                 .social-buttons
                     width: 100%
                     flex-direction: column
@@ -32,9 +27,7 @@ footer
                         width: 100%
                         gap: 10px                            
         #footer-company
-            display: flex
-            flex-direction: column
-            align-items: center
+            @include mixins.flex-column-aligncenter
             border-right-width: 1px
             border-right-color: theme.$md-sys-color-inverse-on-surface
             border-right-style: solid
@@ -62,13 +55,6 @@ footer
                 a
                     text-decoration: none
                     color: theme.$md-sys-color-inverse-on-surface
-        .credits
-            display: flex !important
-            flex-direction: row !important
-            justify-content: right !important
-            width: 100%
-            .credits-wrapper
-                width: 300px !important
 
 @media only screen and (min-width: 768px)
     footer
@@ -109,13 +95,13 @@ footer
                 margin-top: 0px !important
             hr
                 margin-bottom: 25px
-            .credits
-                display: flex !important
-                flex-direction: row !important
-                justify-content: right !important
-                width: 100%
-                .credits-wrapper
-                    width: 300px !important
+        .credits
+            display: flex !important
+            flex-direction: row !important
+            justify-content: right !important
+            width: 100%
+            .credits-wrapper
+                width: 300px !important
 
 @media only screen and (min-width: 992px)
     footer
