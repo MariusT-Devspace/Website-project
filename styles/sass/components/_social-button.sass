@@ -1,9 +1,8 @@
 @use "../utils/_theme"
+@use "../utils/_mixins"
     
 .social-button 
-    display: flex
-    flex-direction: row
-    align-items: center
+    @include mixins.flex-row-aligncenter
     gap: 5px
     a
         background-color: theme.$md-sys-color-primary

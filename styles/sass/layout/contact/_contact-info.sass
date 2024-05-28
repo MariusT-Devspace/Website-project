@@ -1,4 +1,5 @@
 @use "../../utils/_theme"
+@use "../../utils/_mixins"
 
 #contact-info-section
     width: 100%
@@ -9,21 +10,15 @@
         padding-top: 20px
         padding-bottom: 40px
         #contact-info-card
-            display: flex
-            flex-direction: column
-            justify-content: center
+            @include mixins.flex-column-justifycenter
             padding-top: 30px
             .contact-info-content
-                display: flex
-                flex-direction: column
-                justify-content: center
+                @include mixins.flex-column-justifycenter
                 align-items: center
                 gap: 30px
 
 .social-buttons
-    display: flex
-    flex-direction: column
-    justify-content: center
+    @include mixins.flex-column-justifycenter
     align-items: center
     margin-top: 40px
     h6

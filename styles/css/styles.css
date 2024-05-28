@@ -551,11 +551,11 @@ nav .navbar-collapse .navbar-nav {
   background-size: cover !important;
 }
 #promotions-section .section-wrapper #promotions-container .card .row .card-body {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  height: 100%;
   color: #191c21;
   gap: 20px;
 }
@@ -662,13 +662,13 @@ nav .navbar-collapse .navbar-nav {
   .contact-info-item {
     display: flex;
     flex-direction: row;
+    align-items: start;
     gap: 25px;
-    align-items: flex-start;
   }
   .contact-info-item .contact-details-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: start;
     margin-top: -10px;
   }
   .contact-info-item .contact-details-container .contact-details {

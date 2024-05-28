@@ -1,16 +1,13 @@
 @use "../../utils/_theme"
+@use "../../utils/_mixins"
 
 .contact-info-item
-    display: flex
-    flex-direction: column
-    align-items: center
+    @include mixins.flex-column-aligncenter
     gap: 10px
     i
         color: theme.$md-sys-color-tertiary
     .contact-details-container
-        display: flex
-        flex-direction: column
-        align-items: center
+        @include mixins.flex-column-aligncenter
         .contact-details
             margin-top: -5px
             text-align: center !important
@@ -18,25 +15,15 @@
         width: 180px
         word-wrap: break-word !important
 
-#contact-location-desktop
-    display: flex
-    flex-direction: column
-    align-items: center !important
-
-
 @media only screen and (min-width: 768px)
     #contact-info-email
         text-align: left !important
 
     .contact-info-item
-        display: flex
-        flex-direction: row
+        @include mixins.flex-row-alignstart
         gap: 25px
-        align-items: flex-start
         .contact-details-container
-            display: flex
-            flex-direction: column
-            align-items: flex-start
+            @include mixins.flex-column-alignstart
             margin-top: -10px
             .contact-details
                 margin-top: -5px
@@ -46,11 +33,6 @@
             word-wrap: break-word !important
 
     #contact-location-desktop
-        display: flex
-        flex-direction: row
-        justify-content: start
-        gap: 25px
-        //margin-top: -10px
         #location-desktop-details
             div
                 &:first-of-type

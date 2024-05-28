@@ -1,5 +1,45 @@
 @use "../utils/_colors"
 
+@mixin flex-row-justifystart
+    display: flex
+    flex-direction: row
+    justify-content: start
+
+@mixin flex-row-justifycenter
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+@mixin flex-row-justifyend
+    display: flex
+    flex-direction: row
+    justify-content: end
+
+@mixin flex-row-alignstart
+    display: flex
+    flex-direction: row
+    align-items: start
+
+@mixin flex-row-aligncenter
+    display: flex
+    flex-direction: row
+    align-items: center
+    
+@mixin flex-row-alignend
+    display: flex
+    flex-direction: row
+    align-items: end
+
+@mixin flex-column-justifystart
+    display: flex
+    flex-direction: column
+    justify-content: start
+
+@mixin flex-column-justifycenter
+    display: flex
+    flex-direction: column
+    justify-content: center
+
 @mixin flex-column-aligncenter
     display: flex
     flex-direction: column
@@ -9,11 +49,6 @@
     display: flex
     flex-direction: column
     align-items: start
-
-@mixin flex-row-alignend
-    display: flex
-    flex-direction: row
-    align-items: end
 
 @mixin footer-text-style
     font-size: 1.14rem
