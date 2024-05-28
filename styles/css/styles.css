@@ -111,15 +111,6 @@ footer .footer-wrapper .footer-content .footer-text a {
   text-decoration: none;
   color: #eff0f9;
 }
-footer .footer-wrapper .credits {
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: right !important;
-  width: 100%;
-}
-footer .footer-wrapper .credits .credits-wrapper {
-  width: 300px !important;
-}
 
 @media only screen and (min-width: 768px) {
   footer .footer-wrapper {
@@ -171,13 +162,13 @@ footer .footer-wrapper .credits .credits-wrapper {
   footer .footer-wrapper hr {
     margin-bottom: 25px;
   }
-  footer .footer-wrapper .credits {
+  footer .credits {
     display: flex !important;
     flex-direction: row !important;
     justify-content: right !important;
     width: 100%;
   }
-  footer .footer-wrapper .credits .credits-wrapper {
+  footer .credits .credits-wrapper {
     width: 300px !important;
   }
 }
@@ -306,7 +297,7 @@ footer .footer-wrapper .credits .credits-wrapper {
 }
 .social-container-contact {
   display: flex;
-  direction: row;
+  flex-direction: row;
   justify-content: center;
 }
 .social-container-contact .social-content-contact {
@@ -664,12 +655,6 @@ nav .navbar-collapse .navbar-nav {
   word-wrap: break-word !important;
 }
 
-#contact-location-desktop {
-  display: flex;
-  flex-direction: column;
-  align-items: center !important;
-}
-
 @media only screen and (min-width: 768px) {
   #contact-info-email {
     text-align: left !important;
@@ -693,12 +678,6 @@ nav .navbar-collapse .navbar-nav {
   .contact-info-item .contact-info-email {
     width: 180px;
     word-wrap: break-word !important;
-  }
-  #contact-location-desktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 25px;
   }
   #contact-location-desktop #location-desktop-details div:first-of-type {
     margin-top: -5px;
@@ -765,6 +744,8 @@ nav .navbar-collapse .navbar-nav {
 #contact-form .btn {
   background-color: #00498e;
   max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
